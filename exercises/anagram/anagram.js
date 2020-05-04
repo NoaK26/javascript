@@ -1,23 +1,23 @@
 var alphagram = function(word) {
-  return word.split('').sort().join('');
-};
+  return word.split('').sort().join('')
+}
 
 var are_anagrams = function(l, r){
-  let left = l.toLowerCase();
-  let right = r.toLowerCase();
+  let left = l.toLowerCase()
+  let right = r.toLowerCase()
 
-  if (left == right ) return false;
+  if (left == right ) return false
 
-  return alphagram(left) == alphagram(right);
-};
+  return alphagram(left) == alphagram(right)
+}
 
 var Anagram = function(word){
-  this.word = word;
-};
+  this.word = word
+}
 Anagram.prototype.match = function(words){
   return words.filter(function(word){
-    return are_anagrams(this.word, word);
-  },this);
-};
+    return are_anagrams(this.word, word)
+  },this)
+}
 
-module.exports = Anagram;
+module.exports = Anagram

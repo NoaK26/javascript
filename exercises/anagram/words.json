@@ -1,0 +1,37 @@
+{
+    "no matches":
+    [ "hello", "world", "zombies", "pants"],
+    "detects an anagram":
+    ["tan", "stand", "at"],
+    "does not detect false positives":
+    ["eagle"],
+    "does not detect anagram subsets":
+    ["dog", "goody"],
+    "detects anagram":
+    ["enlists", "google", "inlets", "banana"],
+    "detects multiple anagrams":
+    ["gallery", "ballerina", "regally", "clergy", "largely", "leading"],
+    "detects anagrams case-insensitively":
+    ["cashregister", "Carthorse", "radishes"],
+    "does not detect a word as its own anagram":
+    ["banana"],
+    "does not detect an anagram if the original word is repeated":
+    ["go Go GO"],
+    "words are not anagrams of themselves (case-insensitive)":
+    ["BANANA", "Banana", "banana"],
+    "words other than themselves can be anagrams":
+    ["Listen", "Silent", "LISTEN"],
+    "does not detect non-anagrams with identical checksum":
+    ["last"],
+    "detects multiple anagrams with different case":
+    ["Eons", "ONES"],
+    "detects three anagrams":
+    [
+        "gallery",
+        "ballerina",
+        "regally",
+        "clergy",
+        "largely",
+        "leading"
+    ]
+}
