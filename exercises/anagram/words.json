@@ -16,7 +16,7 @@
     "does not detect a word as its own anagram":
     ["banana"],
     "does not detect an anagram if the original word is repeated":
-    ["go Go GO"],
+    ["go go GO"],
     "words are not anagrams of themselves (case-insensitive)":
     ["BANANA", "Banana", "banana"],
     "words other than themselves can be anagrams":

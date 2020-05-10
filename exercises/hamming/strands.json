@@ -1,0 +1,20 @@
+{
+    "should detect empty strands":
+    ["", ""],
+    "should detect single letter identical strands":
+    ["A", "A"],
+    "should detect single letter different strands":
+    ["G", "T"],
+    "should detect long identical strands":
+    ["GGACTGAAATCTG", "GGACTGAAATCTG"],
+    "should detect long different strands":
+    ["GGACGGATTCTG", "AGGACGGATTCT"],
+    "should disallow first strand longer":
+    ["AATG", "AAA"],
+    "should disallow second strand longer":
+    ["ATA", "AGTG"],
+    "should disallow left empty strand":
+    ["", "G"],
+    "should disallow right empty strand":
+    ["G", ""] 
+}
